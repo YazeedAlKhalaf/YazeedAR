@@ -7,32 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0512495626B1C1250007295B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512495526B1C1250007295B /* AppDelegate.swift */; };
-		0512495826B1C1250007295B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512495726B1C1250007295B /* ContentView.swift */; };
+		0512495826B1C1250007295B /* CameraARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512495726B1C1250007295B /* CameraARView.swift */; };
 		0512495C26B1C1270007295B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0512495B26B1C1270007295B /* Assets.xcassets */; };
 		0512495F26B1C1270007295B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0512495E26B1C1270007295B /* Preview Assets.xcassets */; };
 		0512497126B1D1620007295B /* ToyDrummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0512496A26B1D1620007295B /* ToyDrummer.usdz */; };
 		0512497226B1D1620007295B /* ToyCar.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0512496B26B1D1620007295B /* ToyCar.usdz */; };
 		0512497326B1D1620007295B /* ToyRobotVintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0512496C26B1D1620007295B /* ToyRobotVintage.usdz */; };
 		0512497426B1D1620007295B /* PegasusTrail.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0512496D26B1D1620007295B /* PegasusTrail.usdz */; };
-		0512497526B1D1620007295B /* TopBiplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0512496E26B1D1620007295B /* TopBiplane.usdz */; };
+		0512497526B1D1620007295B /* ToyBiplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0512496E26B1D1620007295B /* ToyBiplane.usdz */; };
 		0512497626B1D1620007295B /* ChairSwan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0512496F26B1D1620007295B /* ChairSwan.usdz */; };
 		0512497726B1D1620007295B /* FenderStratocast.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0512497026B1D1620007295B /* FenderStratocast.usdz */; };
+		0512497926B1D8D50007295B /* ModelPickerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512497826B1D8D50007295B /* ModelPickerWidget.swift */; };
+		0512497B26B1DBC20007295B /* YazeedARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512497A26B1DBC20007295B /* YazeedARApp.swift */; };
+		0512497F26B1DC6C0007295B /* YazeedARAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512497E26B1DC6C0007295B /* YazeedARAppWidget.swift */; };
+		0512498126B1DCDA0007295B /* ARViewContainerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512498026B1DCDA0007295B /* ARViewContainerWidget.swift */; };
+		0512498526B1DEC90007295B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0512498426B1DEC90007295B /* LaunchScreen.storyboard */; };
+		0512498726B1EAC90007295B /* PlacementButtonsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512498626B1EAC90007295B /* PlacementButtonsWidget.swift */; };
+		0512498926B1F6450007295B /* ModelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512498826B1F6450007295B /* ModelModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0512495226B1C1250007295B /* YazeedAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YazeedAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0512495526B1C1250007295B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0512495726B1C1250007295B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0512495726B1C1250007295B /* CameraARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraARView.swift; sourceTree = "<group>"; };
 		0512495B26B1C1270007295B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0512495E26B1C1270007295B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0512496A26B1D1620007295B /* ToyDrummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ToyDrummer.usdz; sourceTree = "<group>"; };
 		0512496B26B1D1620007295B /* ToyCar.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ToyCar.usdz; sourceTree = "<group>"; };
 		0512496C26B1D1620007295B /* ToyRobotVintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ToyRobotVintage.usdz; sourceTree = "<group>"; };
 		0512496D26B1D1620007295B /* PegasusTrail.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = PegasusTrail.usdz; sourceTree = "<group>"; };
-		0512496E26B1D1620007295B /* TopBiplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = TopBiplane.usdz; sourceTree = "<group>"; };
+		0512496E26B1D1620007295B /* ToyBiplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ToyBiplane.usdz; sourceTree = "<group>"; };
 		0512496F26B1D1620007295B /* ChairSwan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ChairSwan.usdz; sourceTree = "<group>"; };
 		0512497026B1D1620007295B /* FenderStratocast.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = FenderStratocast.usdz; sourceTree = "<group>"; };
+		0512497826B1D8D50007295B /* ModelPickerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerWidget.swift; sourceTree = "<group>"; };
+		0512497A26B1DBC20007295B /* YazeedARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YazeedARApp.swift; sourceTree = "<group>"; };
+		0512497E26B1DC6C0007295B /* YazeedARAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YazeedARAppWidget.swift; sourceTree = "<group>"; };
+		0512498026B1DCDA0007295B /* ARViewContainerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainerWidget.swift; sourceTree = "<group>"; };
+		0512498226B1DDCC0007295B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0512498426B1DEC90007295B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0512498626B1EAC90007295B /* PlacementButtonsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsWidget.swift; sourceTree = "<group>"; };
+		0512498826B1F6450007295B /* ModelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +78,12 @@
 		0512495426B1C1250007295B /* YazeedAR */ = {
 			isa = PBXGroup;
 			children = (
+				0512498226B1DDCC0007295B /* Info.plist */,
+				0512497A26B1DBC20007295B /* YazeedARApp.swift */,
+				0512498426B1DEC90007295B /* LaunchScreen.storyboard */,
+				0512497D26B1DC370007295B /* Views */,
+				0512497C26B1DC120007295B /* Widgets */,
 				0512496926B1D1460007295B /* Models */,
-				0512495526B1C1250007295B /* AppDelegate.swift */,
-				0512495726B1C1250007295B /* ContentView.swift */,
 				0512495B26B1C1270007295B /* Assets.xcassets */,
 				0512495D26B1C1270007295B /* Preview Content */,
 			);
@@ -88,12 +104,32 @@
 				0512496F26B1D1620007295B /* ChairSwan.usdz */,
 				0512497026B1D1620007295B /* FenderStratocast.usdz */,
 				0512496D26B1D1620007295B /* PegasusTrail.usdz */,
-				0512496E26B1D1620007295B /* TopBiplane.usdz */,
+				0512496E26B1D1620007295B /* ToyBiplane.usdz */,
 				0512496B26B1D1620007295B /* ToyCar.usdz */,
 				0512496A26B1D1620007295B /* ToyDrummer.usdz */,
 				0512496C26B1D1620007295B /* ToyRobotVintage.usdz */,
+				0512498826B1F6450007295B /* ModelModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0512497C26B1DC120007295B /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				0512497826B1D8D50007295B /* ModelPickerWidget.swift */,
+				0512497E26B1DC6C0007295B /* YazeedARAppWidget.swift */,
+				0512498026B1DCDA0007295B /* ARViewContainerWidget.swift */,
+				0512498626B1EAC90007295B /* PlacementButtonsWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		0512497D26B1DC370007295B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0512495726B1C1250007295B /* CameraARView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,12 +193,13 @@
 				0512497726B1D1620007295B /* FenderStratocast.usdz in Resources */,
 				0512497126B1D1620007295B /* ToyDrummer.usdz in Resources */,
 				0512497426B1D1620007295B /* PegasusTrail.usdz in Resources */,
+				0512498526B1DEC90007295B /* LaunchScreen.storyboard in Resources */,
 				0512497626B1D1620007295B /* ChairSwan.usdz in Resources */,
 				0512497226B1D1620007295B /* ToyCar.usdz in Resources */,
 				0512497326B1D1620007295B /* ToyRobotVintage.usdz in Resources */,
 				0512495F26B1C1270007295B /* Preview Assets.xcassets in Resources */,
 				0512495C26B1C1270007295B /* Assets.xcassets in Resources */,
-				0512497526B1D1620007295B /* TopBiplane.usdz in Resources */,
+				0512497526B1D1620007295B /* ToyBiplane.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,8 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0512495826B1C1250007295B /* ContentView.swift in Sources */,
-				0512495626B1C1250007295B /* AppDelegate.swift in Sources */,
+				0512497F26B1DC6C0007295B /* YazeedARAppWidget.swift in Sources */,
+				0512495826B1C1250007295B /* CameraARView.swift in Sources */,
+				0512498126B1DCDA0007295B /* ARViewContainerWidget.swift in Sources */,
+				0512498726B1EAC90007295B /* PlacementButtonsWidget.swift in Sources */,
+				0512497B26B1DBC20007295B /* YazeedARApp.swift in Sources */,
+				0512497926B1D8D50007295B /* ModelPickerWidget.swift in Sources */,
+				0512498926B1F6450007295B /* ModelModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +350,10 @@
 				DEVELOPMENT_TEAM = JL46C549NC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YazeedAR/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -338,8 +382,10 @@
 				DEVELOPMENT_TEAM = JL46C549NC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YazeedAR/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
