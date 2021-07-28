@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PlacementButtonsWidget: View {
     @Binding var isPlacementEnabled: Bool
-    @Binding var selectedModel: String?
-    @Binding var modelConfirmedForPlacement: String?
+    @Binding var selectedModel: ModelModel?
+    @Binding var modelConfirmedForPlacement: ModelModel?
     
     func resetPlacementParameters() {
         self.isPlacementEnabled = false

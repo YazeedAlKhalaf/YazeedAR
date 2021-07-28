@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CameraARView : View {
     @State private var isPlacementEnabled = false
-    @State private var selectedModel: String?
-    @State private var modelConfirmedForPlacement: String?
+    @State private var selectedModel: ModelModel?
+    @State private var modelConfirmedForPlacement: ModelModel?
     
-    private var models: [String] = {
+    private var models: [ModelModel] = {
         let fileManager = FileManager.default
         
         guard let path = Bundle.main.resourcePath,
@@ -21,10 +21,13 @@ struct CameraARView : View {
             return []
         }
         
-        var availableModels: [String] = [];
+        var availableModels: [ModelModel] = [];
         for filename in files where filename.hasSuffix("usdz") {
             let modelName = filename.replacingOccurrences(of: ".usdz", with: "")
-            availableModels.append(modelName)
+            
+            let modelModel = ModelModel(modelName: modelName)
+            
+            availableModels.append(modelModel)
         }
         
         return availableModels

@@ -9,21 +9,21 @@ import SwiftUI
 
 struct ModelPickerWidget: View {
     @Binding var isPlacementEnabled: Bool
-    @Binding var selectedModel: String?
+    @Binding var selectedModel: ModelModel?
     
-    let models: [String]
+    let models: [ModelModel]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 30) {
                 ForEach(0 ..< self.models.count) { index in
                     Button(action: {
-                        print("DEBUG: selected model with name: \(self.models[index])")
+                        print("DEBUG: selected model with name: \(self.models[index].modelName)")
                         
                         self.isPlacementEnabled = true
                         self.selectedModel = self.models[index]
                     }) {
-                        Image(self.models[index])
+                        Image(uiImage: self.models[index].image)
                             .resizable()
                             .frame(height: 80)
                             .aspectRatio(1 / 1, contentMode: .fit)

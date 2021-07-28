@@ -10,7 +10,7 @@ import RealityKit
 import ARKit
 
 struct ARViewContainerWidget: UIViewRepresentable {
-    @Binding var modelConfirmedForPlacement: String?
+    @Binding var modelConfirmedForPlacement: ModelModel?
     
     func makeUIView(context: Context) -> ARView {
         
@@ -31,14 +31,19 @@ struct ARViewContainerWidget: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
-        if let modelName = self.modelConfirmedForPlacement {
-            print("DEBUG: adding model to scene - \(modelName)")
-            let filename = modelName + ".usdz"
-            let modelEntity = try! ModelEntity.loadModel(named: filename)
-            let anchorEntity = AnchorEntity(plane: .any)
-            anchorEntity.addChild(modelEntity)
+        if let model = self.modelConfirmedForPlacement {
             
-            uiView.scene.addAnchor(anchorEntity)
+            if let modelEntity = model.modelEntity {
+                print("DEBUG: adding model to scene - \(model.modelName)")
+                
+                let anchorEntity = AnchorEntity(plane: .any)
+                anchorEntity.addChild(modelEntity.clone(recursive: true))
+                
+                uiView.scene.addAnchor(anchorEntity)
+            } else {
+                print("DEBUG: unable to load model entity for \(model.modelName)")
+            }
+            
             
             DispatchQueue.main.async {
                 self.modelConfirmedForPlacement = nil
